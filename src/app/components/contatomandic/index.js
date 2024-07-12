@@ -19,4 +19,5 @@ const Contato = forwardRef((props, ref) => {
     )
 })
 
+Contato.displayName = 'Contato'
 export default Contato

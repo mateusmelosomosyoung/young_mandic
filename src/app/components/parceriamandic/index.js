@@ -65,4 +65,5 @@ const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
     </>)
 })
 
+Parceria.displayName = 'Parceria'
 export default Parceria

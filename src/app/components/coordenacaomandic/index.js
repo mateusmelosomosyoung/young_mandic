@@ -35,4 +35,5 @@ const Coordenacao = forwardRef((props, ref) => {
     )
 })
 
+Coordenacao.displayName = 'Coordenacao'
 export default Coordenacao

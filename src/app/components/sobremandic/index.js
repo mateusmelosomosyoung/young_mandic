@@ -31,4 +31,5 @@ const Sobre = forwardRef((props, ref) => {
     )
 })
 
+Sobre.displayName = 'Sobre'
 export default Sobre

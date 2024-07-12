@@ -36,4 +36,5 @@ const Investimento = forwardRef(({ scrollToRef, contatoRef }, ref) => {
     )
 })
 
+Investimento.displayName = 'Investimento'
 export default Investimento
