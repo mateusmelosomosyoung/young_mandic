@@ -9,7 +9,7 @@ const HeaderMandic = () => {
   const [showFormMb, setShowFormMb] = useState(true)
 
   return (
-    <>191 x 68 234 57 33 32
+    <>
       <header className={styles.hdrmdg}>
         <div className={styles.hdrmw}>
           <div className={styles.hdmfcp}>

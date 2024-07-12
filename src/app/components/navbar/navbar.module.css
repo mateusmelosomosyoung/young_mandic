@@ -103,6 +103,9 @@
 
 }
 @media(max-width: 1000px){
+    .customnavbar {
+        min-height: 80px;
+    }
 
     .mtrcstmb{
         display: flex;
