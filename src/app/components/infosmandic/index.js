@@ -1,4 +1,5 @@
 import styles from './infosmandic.module.css'
+import Image from 'next/image'
 
 const InfosMandic = () => {
 
@@ -47,7 +48,7 @@ const InfosMandic = () => {
             <div className={styles.dmdctt}>
                 {content.map((item, index) => (
                     <div key={index} className={styles.dvmdctt}>
-                        <img src={item.url} alt={item.title} className={'icon'} />
+                        <Image src={item.url} alt={item.title} className={'icon'} width={26} height={26}/>
                         <br/>
                         <b>{item.title}</b>
                         <p>{item.content}</p>

@@ -190,6 +190,15 @@ input[type="radio"]:checked::before {
   object-fit: contain;
 }
 
+
+
+.iconpage{
+  width: 30px;
+  height:30px;
+  cursor: pointer;
+}
+
+
 .iconlittle {
   width: 20px;
   height: 20px;
@@ -261,13 +270,6 @@ input[type="radio"]:checked::before {
 }
 
 .crspt{
-  cursor: pointer;
-}
-
-
-.iconpage{
-  width: 30px;
-  height:30px;
   cursor: pointer;
 }
 

@@ -42,6 +42,7 @@
     flex-direction: column;
     gap:2rem;
     padding: 0 2rem;
+    max-width: 50%;
 }
 
 .dpctt{
@@ -75,5 +76,6 @@
     }
     .clicr{
         padding: 0;
+        max-width: 100%;
     }
 }

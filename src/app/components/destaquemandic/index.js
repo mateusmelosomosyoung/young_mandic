@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react"
 import styles from './destaque.module.css'
+import Image from "next/image"
 
 const Destaques = forwardRef(({ scrollToRef, contatoRef }) => {
 
@@ -27,16 +28,16 @@ const Destaques = forwardRef(({ scrollToRef, contatoRef }) => {
             <picture>
                 <source srcSet="/img/mobile/img4.jpg" media="(max-width: 1000px)" />
                 <source srcSet="/img/mobile/imgcttmob.png" media="(max-width: 500px)" />
-                <img src="/img/mobile/img4.jpg" alt="Imagem profissionais da saúde" className={styles.imgcttmb} />
+                <Image src={"/img/mobile/img4.jpg"} alt="Imagem profissionais da saúde" className={styles.imgcttmb} width={600} height={300} />
             </picture>
             <div className={styles.pcdp}>
-                <img src={'/img/im3.png'} alt={'Imagem profissionais da saúde'} className={styles.imgctt} />
+                <Image src={"/img/im3.png"} alt="Imagem profissionais da saúde" className={styles.imgctt} width={300} height={600} />
                 <div className={styles.divctt}>
                     <p className="detailtitle titlebluepage ">O curso ideal para médicos que buscam mais destaque!</p>
                     {content.map((item, index) => (
                         <div key={index}>
                             <div className={styles.pcttdv}>
-                                <img src='/icons/arrow.png' alt='Seta >' className='iconlittle'/>
+                                <Image src={"/icons/arrow.png"} alt="Seta" className='iconlittle' width={20} height={20} />
                                 <p className={styles.cfgt}>{item.title}</p>
                             </div>
                             <p className={styles.plft}>{item.content}</p>
@@ -52,4 +53,5 @@ const Destaques = forwardRef(({ scrollToRef, contatoRef }) => {
     </>)
 })
 
+Destaques.displayName = 'Destaques'
 export default Destaques

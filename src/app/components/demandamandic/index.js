@@ -1,5 +1,5 @@
 import styles from './demandamandic.module.css'
-
+import Image from 'next/image'
 
 const DemandaMandic = () => {
 
@@ -33,7 +33,7 @@ const DemandaMandic = () => {
                 <div className={styles.dvdmcontet}>
                     {content.map((item, index) => (
                         <div key={index} className={styles.dvcttit}>
-                            <img src={item.url} alt={item.title} className={'icon'} />
+                            <Image src={item.url} alt={item.title} width={26} height={26}  className={'icon'} />
                             <b className={styles.dvnyc}>{item.title.toUpperCase()}</b>
                             <p>{item.content}</p>
                         </div>

@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react"
 import styles from './investimento.module.css'
+import Image from "next/image"
 
 const Investimento = forwardRef(({ scrollToRef, contatoRef }, ref) => {
 
@@ -20,7 +21,8 @@ const Investimento = forwardRef(({ scrollToRef, contatoRef }, ref) => {
                     </div>
                     <div className={styles.ivrgt}>
                         <div className={styles.divp}>
-                            <img src={'/icons/maisicon.png'} alt={'Ícone de soma +'} />
+                            <Image  src={'/icons/maisicon.png'} alt={'Ícone de soma +'} height={63} width={63}/>
+                            
                             <div className={styles.dvpst}>
                                 <p>3x de R$3.990</p>
                                 <p>9x de R$7.590</p>

@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react"
 import styles from './parceria.module.css'
+import Image from "next/image"
 
 const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
 
@@ -30,7 +31,7 @@ const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
                     </p>
                 </div>
                 <div>
-                    <img src={'/img/img1.png'} alt={'Imagem quarto'} className={styles.img1} />
+                    <Image src={'/img/img1.png'} alt={'Imagem quarto'} className={styles.img1} width={600} height={400}/>
                 </div>
 
             </div>
@@ -39,7 +40,7 @@ const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
             <br/>
             <div className={styles.bpctt}>
                 <div>
-                    <img src={'/img/img2.png'} alt={'Imagem profissionais da saúde'} className={styles.img2}/>
+                    <Image src={'/img/img2.png'} alt={'Imagem profissionais da saúde'} className={styles.img2} width={700} height={400}/>
                 </div>
                 <div className={styles.ctbp}>
                     <p className={'fz20'}>

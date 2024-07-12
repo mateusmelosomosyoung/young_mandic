@@ -4,6 +4,7 @@ import { Modal } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './navbar.module.css'
 import FormEmenta from '../formementamandic'
+import Image from "next/image"
 
 const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,9 +34,10 @@ const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }
       <nav className={styles.customnavbar}>
         <div className={styles.cstnvbitem}>
           <div className={styles.cstimgbtfmb}>
-            <img src={'/img/mandiclogo.png'} alt="Mandic Logo" className={styles.cstimg}/>
-            {isOpen ? <img src={'/icons/menucl.png'} alt={'Ícone x para fechar'} className={styles.imgocmnclose} onClick={toggle}/> : <img src={'/icons/menuop.png'} alt={'Ícone x para abrir'} className={styles.imgocmnopen} onClick={toggle}/>}
+            <Image src={'/img/mandiclogo.png'} alt='Mandic Logo' className={styles.cstimg} height={60}  width={159}/>
+            {isOpen ? <Image src={'/icons/menucl.png'} alt={'Ícone x para fechar'} className={styles.imgocmnclose} onClick={toggle} height={32}  width={32}/> : <Image src={'/icons/menuop.png'} alt={'Ícone para abrir'} className={styles.imgocmnopen} onClick={toggle} height={18}  width={36}/>}
           </div>
+          
           <div className={styles.mtrcstnv}>
             <ul className={styles.cstnvbir}>
               {itemList.map((item, index) => (
@@ -66,7 +68,7 @@ const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }
         <Modal.Body className="modal-body-custom">
             <div className={"mdctt"}>
                 <div className={"dvimgcmd"}>
-                  <img src="/icons/close.png" alt="Botão de fechar" onClick={handleModalClose} className={"iconpage"}/>
+                  <Image src={'/icons/close.png'} alt='Botão de fechar'  className={"iconpage"} onClick={handleModalClose}  width={30} height={30} />
                 </div>
                 <div className='dv100'>
                   <div className={styles.nvbfrm}>

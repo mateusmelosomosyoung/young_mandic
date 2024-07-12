@@ -2,13 +2,14 @@
 import React, {useState} from 'react'
 import styles from './headermandic.module.css'
 import FormMandic from '../formmandic'
+import Image from 'next/image'
 
 const HeaderMandic = () => {
 
   const [showFormMb, setShowFormMb] = useState(true)
 
   return (
-    <>
+    <>191 x 68 234 57 33 32
       <header className={styles.hdrmdg}>
         <div className={styles.hdrmw}>
           <div className={styles.hdmfcp}>
@@ -23,9 +24,9 @@ const HeaderMandic = () => {
                   A única que garante a comprovação do atendimento de <b>mais de 60 pacientes</b> ao final do curso.
               </p>
               <div className={styles.hdlac}>
-                  <img src={'/img/logobmandic.png'} alt={'Logo Mandic'} />
-                  <img src={'/img/maisimg.png'} alt={'Ícone mais'} />
-                  <img src={'/img/logofer.png'} alt={'Logo Fertilidade e Vida'} />
+                  <Image src={'/img/logobmandic.png'} alt={'Logo Mandic'} width={191} height={68} />
+                  <Image src={'/img/maisimg.png'} alt={'Logo Mandic'} width={33} height={32} />
+                  <Image src={'/img/logofer.png'} alt={'Logo Mandic'} width={234} height={57} />
               </div>
           </div>
           <div className={styles.hmfrmdc}>
@@ -43,7 +44,7 @@ const HeaderMandic = () => {
       </div>
       {showFormMb && <>
         <div className={styles.frmtmb}>
-          <img src="/icons/close.png" alt="Botão de fechar" onClick={() => setShowFormMb(false)} className={"iconpage"}/>
+          <Image src={"/icons/close.png"} alt="Botão de fechar" onClick={() => setShowFormMb(false)} className={"iconpage"} width={30} height={30} />
           <FormMandic withTitle='true'/>
         </div>
       </>}

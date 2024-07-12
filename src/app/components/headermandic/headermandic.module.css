@@ -80,6 +80,7 @@
 }
 
 
+
 @media(min-width: 1600px){/*
     .hdrmdg{
         background-image: url('/img/bbmandic.png');
@@ -89,6 +90,7 @@
 @media(max-width: 1000px){
     .hdrmdg{
         align-items: flex-end;
+        margin-top: 50px;
     }
     .hmfrmdc{
         display: none;

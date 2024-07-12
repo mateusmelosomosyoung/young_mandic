@@ -1,5 +1,6 @@
 import styles from './footermandic.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const FooterMandic = () => {
@@ -43,9 +44,9 @@ const FooterMandic = () => {
         <div className={styles.fmbce}>
             <div className={styles.cfpb}>
                 <div className={styles.lfpc}>
-                    <img className={styles.ftrmg} src={'/img/logopostmandic.png'} alt={'Logo Mandic'}/>
+                    <Image className={styles.ftrmg} src={'/img/logopostmandic.png'} alt={'Logo Pós Médica'} width={216} height={75} />
                     <br/>
-                    <img className={styles.ftrmg} src={'/img/logobmandic.png'} alt={'Logo Mandic'}/>
+                    <Image className={styles.ftrmg} src={'/img/logobmandic.png'} alt={'Logo Mandic'} width={216} height={75} />
                 </div>
                 <div className={styles.cfpb2}>
                     <div className={styles.fcc}>
@@ -70,7 +71,7 @@ const FooterMandic = () => {
                             <div className={styles.rcs}>
                                 {contentsocial.map((item, index) => (
                                     <Link href={item.href} target='__blank' key={index}>
-                                        <img src={item.src} alt={item.alt} className={'icon'} />
+                                        <Image src={item.src} alt={item.alt} className={'icon'} width={26} height={26} />
                                     </Link>
                                 ))}
                             </div>

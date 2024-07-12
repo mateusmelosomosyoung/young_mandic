@@ -2,8 +2,9 @@
 import React from "react"
 import styles from './professores.module.css'
 import { useState, useEffect } from "react"
-import { Modal, Button } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Image from "next/image"
 
 const Professores = () => {
     const [selectedId, setSelectedId] = useState(null)
@@ -169,7 +170,7 @@ const Professores = () => {
                         {professors.slice(0, showAll ? professors.length : 3).map((item) => (
                             <div key={item.id} className={styles.grdctt}>
                                 <div className={styles.imgctt1}>
-                                    <img src={item.src} alt={item.alt}  className={styles.dpimg}/>
+                                    <Image src={item.src} alt={item.alt}  className={styles.dpimg} width={400} height={395} />
                                     <span className={styles.txtovr} >{item.name.toUpperCase()}</span>
                                 </div>
                                 <p>{item.resume}</p>
@@ -177,7 +178,7 @@ const Professores = () => {
                                     <p className={styles.bttxt}>
                                         CURRICULO COMPLETO
                                     </p>
-                                    <img src="/icons/seguir.png" className="icon" alt="Seta pra frente >" />
+                                    <Image src={"/icons/seguir.png"} alt="Seta pra frente >" className="icon" width={26} height={26} />
                                 </div>
                             </div>
                         ))}
@@ -196,12 +197,12 @@ const Professores = () => {
                             {selectedProfessor && (
                                 <div className={"mdctt"}>
                                   <div className={"dvimgcmd"}>
-                                    <img src="/icons/close.png" alt="Botão de fechar" onClick={handleCloseModal} className={"iconpage"}/>
+                                    <Image src={"/icons/close.png"} alt="Botão de fechar" className="icon" onClick={handleCloseModal}  width={26} height={26} />
                                   </div>
                                   <br/>
                                   <div className={"cttpmd"}>
                                     <div className={"cmppttxt"}>
-                                      <img src={selectedProfessor.src} alt={selectedProfessor.alt}  className={styles.dpimgMdl}/>
+                                      <Image src={selectedProfessor.src} alt={selectedProfessor.alt} className={styles.dpimgMdl} width={440} height={395} />
                                       <p className={styles.txttl}>{selectedProfessor.name.toUpperCase()}</p>
                                       <p className="textblue400">{selectedProfessor.resume}</p>
                                     </div>
