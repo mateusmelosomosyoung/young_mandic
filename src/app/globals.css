@@ -283,9 +283,14 @@ input[type="radio"]:checked::before {
   gap:1rem;
 }
 
+.frg h2{
+  font-weight: 700;
+}
+
 .frg label{
   font-weight: 600; /* Adicionado peso da fonte */
 }
+
 
 .fmflds{
   display: flex;
