@@ -10,6 +10,9 @@
   margin:0;
 }
 
+.main p {
+  margin-bottom:0;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
