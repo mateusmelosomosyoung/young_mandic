@@ -65,7 +65,7 @@ const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }
       </nav>
 
       <Modal show={showModal} onHide={handleModalClose} dialogClassName="modal-70w">
-        <Modal.Body className="modal-body-custom">
+        <Modal.Body className="modal-body-custom" >
             <div className={"mdctt"}>
                 <div className={"dvimgcmd"}>
                   <Image src={'/icons/close.png'} alt='Botão de fechar'  className={"iconpage"} onClick={handleModalClose}  width={30} height={30} />
