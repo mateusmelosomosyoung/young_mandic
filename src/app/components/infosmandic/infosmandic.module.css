@@ -1,0 +1,37 @@
+.dvimd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #223067;
+    color: #ffffff;
+    width: 100%;
+    padding:2rem 0;
+}
+
+.dmdctt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 81.25rem;
+    align-items: flex-start;
+    gap:3rem;
+    padding: 0 2rem;
+}
+
+.dvmdctt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dvmdctt b{
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-weight:700;
+}
+.dvmdctt p{
+    font-size: 14px;
+    font-weight:400;
+}

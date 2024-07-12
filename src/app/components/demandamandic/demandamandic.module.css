@@ -1,0 +1,59 @@
+.dvdmg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #223067;
+    flex-direction: column;
+    color: #ffffff;
+    width: 100%;
+    padding:4rem 0;
+}
+.dccgnr{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 81.25rem;
+    width: 100%;
+    gap:2rem;
+    padding: 0 2rem;
+}
+
+.dvdmcontet{
+    display: flex;
+    flex-direction: row;
+    max-width: 81.25rem;
+    align-items: flex-start;
+    gap:3rem;
+}
+
+.dvcttit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 30%;
+    gap:1rem;
+}
+
+.dvnyc{
+    font-size: 16px;
+    font-weight:600;
+    color: #F5CC18;
+}
+.dvcttit p{
+    font-size: 14px;
+    font-weight:400;
+}
+
+
+@media(max-width: 1000px){
+    .dvcttit{
+        max-width: 100%;
+        width: auto;
+    }
+    .dvdmcontet{
+        flex-direction: column;
+        gap:1rem;
+    }
+}

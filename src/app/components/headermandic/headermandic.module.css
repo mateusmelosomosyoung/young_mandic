@@ -1,0 +1,148 @@
+.hdrmdg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url('/img/banner_mandic.png');
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center; /* Para centralizar a imagem */
+    min-width: 100%;
+    padding:4rem 0;
+    margin-top: 70px;
+    z-index: 1;
+    min-height: 300px;
+}
+.hdrmdg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black 0%, transparent 70%);
+}
+.hdrmw{
+    max-width: 81.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: white;
+    justify-content:space-between;
+    z-index: 2;
+    width: 100%;
+    padding: 0 2rem;
+}
+.hdmfcp{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    max-width: 50%;
+}
+
+
+.hdmfcp2{
+    display: flex;
+    flex-direction: column;
+    gap:0.1rem;
+}
+
+
+.hdlac{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hmfrmdc{
+    width: 40%;
+    height: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #223067;
+    padding: 2rem;
+}
+
+.txtfweb{
+    display: block;
+    font-size: 1.25rem;
+}
+
+.divfmob{
+    display: none;
+}
+
+.frmtmb{
+    display: none;
+}
+
+
+@media(min-width: 1600px){/*
+    .hdrmdg{
+        background-image: url('/img/bbmandic.png');
+    }*/
+}
+
+@media(max-width: 1000px){
+    .hdrmdg{
+        align-items: flex-end;
+    }
+    .hmfrmdc{
+        display: none;
+    }
+
+    .hdlac{
+        display: none;
+    }
+
+    .txtfweb{
+        display: none;
+    }
+    
+    .divfmob{
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        padding:0 2rem;
+    }
+    .txtfmob{
+        display: block;
+        font-size: 1rem;
+        color:#223067;
+    }
+
+
+    .frmtmb{
+        display: flex;
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: flex-end;
+        justify-content: center;
+        top: 80px;
+        z-index: 9;
+        max-width: 380px;
+        position: fixed; 
+        background-color: white;
+        border-radius: 8px;
+        padding:1rem;
+        animation: fadeInUp 0.5s ease-out;
+    }
+    .hdmfcp{
+        gap:2rem;
+        max-width: 100%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

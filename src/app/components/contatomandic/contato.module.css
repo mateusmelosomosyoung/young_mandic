@@ -1,0 +1,32 @@
+.cctt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    color: #223067;
+    padding:2rem 0;
+}
+
+.dctr{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    max-width: 81.25rem;
+    padding: 0 2rem;
+}
+
+.dhf{
+    width: 50%;
+}
+
+@media(max-width: 1000px){
+    .dctr{
+        flex-direction: column;
+        gap:1rem;
+    }
+    .dhf{
+        width: auto;
+    }
+    
+}

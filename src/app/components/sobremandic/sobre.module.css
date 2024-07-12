@@ -1,0 +1,39 @@
+.scp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem 0 2rem 0 ;
+}
+
+.cppa{
+    max-width: 81.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:2rem;
+    padding: 0 2rem;
+}
+
+.dvmdl{
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+}
+
+
+.ctm{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color:#223067;
+}
+
+
+@media(max-width:1000px){
+    .cppa{
+        gap:0.5rem;
+    }
+}

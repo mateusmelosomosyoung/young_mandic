@@ -1,0 +1,9 @@
+.mxwfb{
+    max-width: 380px;
+}
+
+.dfbttal{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

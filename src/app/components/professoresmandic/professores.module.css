@@ -1,0 +1,123 @@
+.dpcg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.dwtac{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    max-width: 81.25rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 2rem;
+}
+
+
+.txttl{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    color: #223067;
+}
+
+.spfc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1rem;
+}
+
+.imgctt1{
+    position: relative;
+    display: inline-block;
+}
+
+.grdctt{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    color: #223067;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+
+.dpimg{
+    display: block;
+    width: 400px;
+    height: 395px;
+    position: relative;
+}
+
+.dpimgMdl{
+    display: block;
+    width: 400px;
+    height: 395px;
+    position: relative;
+}
+
+.txtovr{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    transform: translate(0%, -10%);
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.3rem;
+}
+
+.btsml {
+    display: flex;
+    background: none;
+    color: #223067;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+    /* Adiciona a propriedade transform com scale 1 para definir o tamanho inicial */
+    transform: scale(1);
+  }
+
+.btsml:hover {
+    transition: transform 0.3s ease-in; /* Define a transição */
+    transform: scale(1.03); /* Aumenta a escala para 1.05 no hover */
+}
+
+.bttxt{
+    font-size: 16px;
+    color: #223067;
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+}
+
+.dvfbtt{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media(max-width: 1000px){
+            
+    .dwtac{
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 2rem;
+    }
+    .dpimg{
+        width: 380px;
+        height: auto;
+    }
+
+    .dpimgMdl{
+        display: block;
+        width: 280px;
+        height: auto;
+        position: relative;
+    }
+}
