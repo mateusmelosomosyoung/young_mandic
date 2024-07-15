@@ -80,5 +80,18 @@
     .clicr{
         padding: 0;
         max-width: 100%;
+        gap:0.5rem;
+    }
+
+    .bgrd{
+        padding:2rem 0;
+    }
+        
+    .txttt{
+        font-size: 1rem;
+    }
+
+    .txttt2{
+        font-size: 1.25rem;
     }
 }

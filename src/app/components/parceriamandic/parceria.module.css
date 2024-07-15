@@ -61,6 +61,10 @@
     width: 40%;
 }
 
+.imgslpm{
+    padding-top: 0;
+}
+
 @media(min-width: 1000px) and (max-width: 1200px){
     .img1{
         width: 400px;
@@ -104,6 +108,17 @@
     .cttbtpg{
         width: 60%;
     }
+    .pcp{
+        padding: 0;
+    }
 
+        
+    .imgslpm{
+        padding-top: 1rem;
+    }
+
+    .ctbp{
+        gap:1rem;
+    }
     
 }

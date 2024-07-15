@@ -3,7 +3,6 @@ import React from "react"
 import styles from './professores.module.css'
 import { useState, useEffect, useMemo } from "react"
 import { Modal } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Image from "next/image"
 
 const Professores = () => {

@@ -13,6 +13,7 @@ import Parceria from "./components/parceriamandic"
 import Destaques from "./components/destaquemandic"
 import Coordenacao from "./components/coordenacaomandic"
 import Professores from "./components/professoresmandic"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
 

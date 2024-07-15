@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { Modal } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './navbar.module.css'
 import FormEmenta from '../formementamandic'
 import Image from "next/image"
@@ -34,7 +33,7 @@ const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }
       <nav className={styles.customnavbar}>
         <div className={styles.cstnvbitem}>
           <div className={styles.cstimgbtfmb}>
-            <Image src={'/img/mandiclogo.png'} alt='Mandic Logo' className={styles.cstimg} height={60}  width={159}/>
+            <Image src={'/img/mandiclogo2.png'} alt='Mandic Logo' className={styles.cstimg} height={68}  width={192}/>
             {isOpen ? <Image src={'/icons/menucl.png'} alt={'Ícone x para fechar'} className={styles.imgocmnclose} onClick={toggle} height={32}  width={32}/> : <Image src={'/icons/menuop.png'} alt={'Ícone para abrir'} className={styles.imgocmnopen} onClick={toggle} height={18}  width={36}/>}
           </div>
           
@@ -58,8 +57,11 @@ const Navbar = ({ scrollToRef, sobreRef, investimentoRef, profsRef, contatoRef }
                   </li>
                 ))}
               </ul>
-              <button onClick={() => scrollToRef(contatoRef)} className='buttonP'>INSCREVA-SE AGORA</button>
+              <div className={styles.divfbpc}>
+                <button onClick={() => scrollToRef(contatoRef)} className='buttonP'>INSCREVA-SE AGORA</button>
+              </div>
             </div>
+            
           </>}
         </div>
       </nav>

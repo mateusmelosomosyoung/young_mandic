@@ -24,9 +24,9 @@ const HeaderMandic = () => {
                   A única que garante a comprovação do atendimento de <b>mais de 60 pacientes</b> ao final do curso.
               </p>
               <div className={styles.hdlac}>
-                  <Image src={'/img/logobmandic.png'} alt={'Logo Mandic'} width={191} height={68} />
-                  <Image src={'/img/maisimg.png'} alt={'Logo Mandic'} width={33} height={32} />
-                  <Image src={'/img/logofer.png'} alt={'Logo Mandic'} width={234} height={57} />
+                  <Image src={'/img/logobmandic.png'} alt={'Logo Mandic'} width={191} height={68} className={styles.lgbh1} />
+                  <Image src={'/img/maisimg.png'} alt={'Logo Mandic'} width={33} height={32}  className={styles.lgbh2}/>
+                  <Image src={'/img/logofer.png'} alt={'Logo Mandic'} width={234} height={57}  className={styles.lgbh3}/>
               </div>
           </div>
           <div className={styles.hmfrmdc}>
@@ -43,9 +43,11 @@ const HeaderMandic = () => {
         </p>
       </div>
       {showFormMb && <>
-        <div className={styles.frmtmb}>
-          <Image src={"/icons/close.png"} alt="Botão de fechar" onClick={() => setShowFormMb(false)} className={"iconpage"} width={30} height={30} />
-          <FormMandic withTitle='true'/>
+        <div className={styles.overlay}>
+          <div className={styles.frmtmb}>
+            <Image src={"/icons/close.png"} alt="Botão de fechar" onClick={() => setShowFormMb(false)} className={"iconpage"} width={30} height={30} />
+            <FormMandic withTitle='true'/>
+          </div>
         </div>
       </>}
     </>

@@ -37,7 +37,6 @@ const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
             </div>
             <br/>
             <br/>
-            <br/>
             <div className={styles.bpctt}>
                 <div>
                     <Image src={'/img/img2.png'} alt={'Imagem profissionais da saúde'} className={styles.img2} width={700} height={400}/>
@@ -53,7 +52,6 @@ const Parceria = forwardRef(({ scrollToRef, contatoRef }) => {
                     </ul>
                 </div>
             </div>
-            <br/>
             <br/>
             <br/>
             <div className={styles.cttbtpg}  onClick={() => scrollToRef(contatoRef)}>

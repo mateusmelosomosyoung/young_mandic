@@ -43,7 +43,7 @@ const Destaques = forwardRef(({ scrollToRef, contatoRef }) => {
                             <p className={styles.plft}>{item.content}</p>
                         </div>
                     ))}
-                    <div onClick={() => scrollToRef(contatoRef)}>
+                    <div onClick={() => scrollToRef(contatoRef)} className={styles.wfbtc}>
                         <button className="buttonP">INSCREVA-SE AGORA</button>
                     </div>
                 </div>

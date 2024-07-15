@@ -54,6 +54,12 @@
     font-weight: 400;
 }
 
+.wfbtc{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
 @media(min-width: 1000px) and (max-width: 1200px){
         
     .imgctt{
@@ -78,5 +84,18 @@
         display: flex;
         width: 100%;
         height: auto;
+    }
+        
+    .plft{
+        padding-left: 28px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .wfbtc{
+        justify-content: center;
+    }
+    .divctt{
+        gap:1rem;
     }
 }

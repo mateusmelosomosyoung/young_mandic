@@ -21,7 +21,7 @@ const Investimento = forwardRef(({ scrollToRef, contatoRef }, ref) => {
                     </div>
                     <div className={styles.ivrgt}>
                         <div className={styles.divp}>
-                            <Image  src={'/icons/maisicon.png'} alt={'Ícone de soma +'} height={63} width={63}/>
+                            <Image  src={'/icons/maisicon.png'} alt={'Ícone de soma +'} height={63} width={63} className={styles.icmgfmb}/>
                             
                             <div className={styles.dvpst}>
                                 <p>3x de R$3.990</p>

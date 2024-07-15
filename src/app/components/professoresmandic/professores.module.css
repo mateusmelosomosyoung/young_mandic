@@ -40,16 +40,17 @@
 .grdctt{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 380px;
     color: #223067;
     gap:2rem;
     margin-bottom: 2rem;
+    padding: 0;
 }
 
 .dpimg{
     display: block;
-    width: 400px;
-    height: 395px;
+    width: 380px;
+    height: 380px;
     position: relative;
 }
 
@@ -81,6 +82,7 @@
     cursor: pointer;
     /* Adiciona a propriedade transform com scale 1 para definir o tamanho inicial */
     transform: scale(1);
+    transform: translateY(-0.5rem);
   }
 
 .btsml:hover {
@@ -105,12 +107,12 @@
             
     .dwtac{
         width: auto;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         padding: 0 2rem;
     }
     .dpimg{
-        width: 380px;
+        width: 350px;
         height: auto;
     }
 
@@ -119,5 +121,17 @@
         width: 280px;
         height: auto;
         position: relative;
+    }
+
+    .txttl{
+        font-size: 16px;
+    }
+
+    .txtovr{
+        font-size: 1rem;
+    }
+
+    .grdctt{
+        gap:1rem;
     }
 }

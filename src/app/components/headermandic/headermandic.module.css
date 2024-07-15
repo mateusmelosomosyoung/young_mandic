@@ -96,9 +96,6 @@
         display: none;
     }
 
-    .hdlac{
-        display: none;
-    }
 
     .txtfweb{
         display: none;
@@ -108,7 +105,7 @@
         width: auto;
         display: flex;
         align-items: flex-start;
-        padding:0 2rem;
+        padding:2rem;
     }
     .txtfmob{
         display: block;
@@ -123,18 +120,47 @@
         gap:0.5rem;
         align-items: flex-end;
         justify-content: center;
-        top: 100px;
+        top: 130px;
         z-index: 9;
         max-width: 380px;
         position: fixed; 
         background-color: white;
         border-radius: 8px;
-        padding:1rem;
+        padding:2rem 1rem;
         animation: fadeInUp 0.5s ease-out;
     }
     .hdmfcp{
-        gap:2rem;
+        gap:1rem;
         max-width: 100%;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com transparência de 20% */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10; /* Certifique-se de que está acima de outros elementos */
+    }
+    .lgbh1{
+        width: 120px;
+        height: auto;
+    }
+    .lgbh2{
+        width: 10px;
+        height: auto;
+    }
+    .lgbh3{
+        width: 148px;
+        height: auto;
+    }
+        
+    .hdrmw{
+        padding: 10rem 2rem 0 2rem;
     }
 }
 
