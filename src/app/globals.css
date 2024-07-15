@@ -85,6 +85,18 @@ h2{
 }
 
 
+.buttonLoading{
+  cursor:pointer;
+  padding: 1rem;
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  border:none;
+  color:gray;
+  font-weight: 700; /* Adicionado peso da fonte */
+  letter-spacing: 0.15rem; /* Ajuste o valor conforme necessário */
+  transition: transform 1s ease;
+}
+
 .buttonPbig{
   cursor:pointer;
   padding: 1rem;

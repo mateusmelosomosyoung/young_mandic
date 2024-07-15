@@ -1,16 +1,14 @@
 'use client'
 import { useState } from 'react'
+import axios from 'axios'
 import styles from './formementa.module.css'
 
 const FormEmenta = () => {
   const [nome, setNome] = useState('')
   const [telefone, setTelefone] = useState('')
   const [email, setEmail] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleDownload = () => {
-    const downloadUrl = "/docs/Pos_Medica_Mandic_Reproducao_Assistida_PDF_v2.pdf"
-    window.open(downloadUrl) // Abre uma nova janela para o download
-  }
   const downloadFile = () => {
     const downloadUrl = "/docs/Pos_Medica_Mandic_Reproducao_Assistida_PDF_v2.pdf"
     const anchor = document.createElement("a")
@@ -18,20 +16,37 @@ const FormEmenta = () => {
     anchor.download = "PosMedicaMandic_ReproducaoAssistida.pdf"
     anchor.click()
   }
-
-  const handleSubmit = (event) => {
+  
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    downloadFile()
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário
-    console.log({
-      nome,
-      telefone,
-      email
-    })
-    // Resetar os campos após enviar o formulário, se necessário
-    setNome('')
-    setTelefone('')
-    setEmail('')
+
+    const apiKey = `${process.env.NEXT_PUBLIC_API_KEY}`
+
+    const url = `${process.env.NEXT_PUBLIC_URL_API}`
+
+    const data = {
+      nome: nome,
+      telefone: telefone,
+      email: email
+    }
+
+    setLoading(true)
+    try {
+      const result = await axios.post(url, data,{
+        headers: {
+          'apikey': apiKey
+        }
+      })
+      alert('Dados recebidos com sucesso!')
+      setNome('')
+      setTelefone('')
+      setEmail('')
+      downloadFile()
+    } catch (error) {
+      alert(error.message)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (<>
@@ -41,7 +56,7 @@ const FormEmenta = () => {
         <input className='lblwbb' type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='E-mail:' required />
         <div className={styles.dfbttal}>
             <div className={styles.mxwfb}>
-                <button type="submit" className='buttonP'>BAIXAR AGORA</button>
+                <button type="submit" className={loading ? 'buttonLoading': 'buttonP'} disabled={loading}>BAIXAR AGORA</button>
             </div>
         </div>
     </form>
