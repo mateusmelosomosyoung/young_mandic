@@ -59,4 +59,5 @@ const HeaderMandic =  forwardRef(({ scrollToRef, contatoRef }) => {
   )
 })
 
+HeaderMandic.displayName = 'HeaderMandic'
 export default HeaderMandic
