@@ -104,8 +104,10 @@
     .divfmob{
         width: auto;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding:2rem;
+        flex-direction: column;
+        gap:1rem;
     }
     .txtfmob{
         display: block;

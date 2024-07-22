@@ -39,9 +39,16 @@ export default function Home() {
         profsRef={profsRef}
         contatoRef={contatoRef}
         />
-        <HeaderMandic/>
+        <HeaderMandic
+        scrollToRef={scrollToRef}
+        contatoRef={contatoRef}
+        />
         <InfosMandic />
-        <Sobre ref={sobreRef} />
+        <Sobre 
+        ref={sobreRef} 
+        scrollToRef={scrollToRef}
+        contatoRef={contatoRef}
+        />
         <Parceria 
         scrollToRef={scrollToRef}
         contatoRef={contatoRef}

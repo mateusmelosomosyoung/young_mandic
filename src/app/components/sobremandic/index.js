@@ -2,7 +2,7 @@
 import React, {forwardRef} from "react"
 import styles from './sobre.module.css'
 
-const Sobre = forwardRef((props, ref) => {
+const Sobre = forwardRef(({ scrollToRef, contatoRef, ...props }, ref) => {
 
     const content = [
         {content: '1. Anatomia, Fisiologia, Epidemiologia e Diagnóstico dos principais fatores de infertilidade'},
@@ -24,6 +24,12 @@ const Sobre = forwardRef((props, ref) => {
                                 <p key={item.content} className={'fz20'}>{item.content}</p>
                             ))}
                         </div>
+                    </div>
+                    
+                    <div className={styles.dvfmbab}  onClick={() => scrollToRef(contatoRef)} >
+                        <button className='buttonP'>
+                            INSCREVA-SE
+                        </button>
                     </div>
                 </div>
             </div>

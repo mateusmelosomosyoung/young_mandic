@@ -1,10 +1,10 @@
 'use client'
-import React, {useState} from 'react'
+import React, {useState, forwardRef} from 'react'
 import styles from './headermandic.module.css'
 import FormMandic from '../formmandic'
 import Image from 'next/image'
 
-const HeaderMandic = () => {
+const HeaderMandic =  forwardRef(({ scrollToRef, contatoRef }) => {
 
   const [showFormMb, setShowFormMb] = useState(true)
 
@@ -41,6 +41,11 @@ const HeaderMandic = () => {
             <br/>
             A única que garante a comprovação do atendimento de <b>mais de 60 pacientes</b> ao final do curso. <br/>
         </p>
+        <div onClick={() => scrollToRef(contatoRef)} >
+          <button className='buttonP'>
+            INSCREVA-SE
+          </button>
+        </div>
       </div>
       {showFormMb && <>
         <div className={styles.overlay}>
@@ -52,6 +57,6 @@ const HeaderMandic = () => {
       </>}
     </>
   )
-}
+})
 
 export default HeaderMandic

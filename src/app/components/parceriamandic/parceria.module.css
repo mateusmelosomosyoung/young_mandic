@@ -59,6 +59,8 @@
 
 .cttbtpg{
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .imgslpm{
